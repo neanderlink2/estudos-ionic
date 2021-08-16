@@ -1,0 +1,7 @@
+{
+  "name": "todo-list-react",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
