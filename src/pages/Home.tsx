@@ -1,25 +1,15 @@
-import { Heading, Text } from '@chakra-ui/layout';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { Heading, Text } from '@chakra-ui/react';
 import Card from '../components/Card';
-import './Home.css';
-
-
+import Layout from '../layout';
 
 const Home: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Branco</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <Card margin={3}>
-          <Heading color="gray.800">Cabeçalho</Heading>
-          <Text color="gray">Texto</Text>
-        </Card>
-      </IonContent>
-    </IonPage>
+    <Layout title="Início">
+      <Card margin={3}>
+        <Heading>Cabeçalho</Heading>
+        <Text>Texto</Text>
+      </Card>
+    </Layout>
   );
 };
 

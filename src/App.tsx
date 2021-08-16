@@ -1,4 +1,5 @@
 import { IonApp } from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/display.css';
@@ -17,10 +18,16 @@ import Routes from './routes';
 import './theme/variables.css';
 
 
-const App: React.FC = () => (
-  <IonApp>
-    <Routes />
-  </IonApp>
-);
+const App: React.FC = () => {
+  
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <Routes />
+      </IonReactRouter>
+    </IonApp>
+  )
+}
+  ;
 
 export default App;
